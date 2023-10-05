@@ -30,7 +30,7 @@ class Battleship:
         for name, size in [("Destroyer", 2), ("Submarine", 3), ("Battleship", 4), ("Aircraft Carrier", 5)]:
             ship = Ship(name, size)
             while True:
-                self.clear_screen()
+                # self.clear_screen()
                 print(f"{player.name}, place your {name} ({size} spaces).")
                 player.print_board()
 
