@@ -1,8 +1,0 @@
-Stop refresh until player is done setting up.
-Show ships set so far.
-Add error message when trying to add in same place.
-Add message when ship is sunk.
-
-New text here
-
-Further new stuff
