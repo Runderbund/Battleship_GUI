@@ -11,13 +11,13 @@ class Battleship:
         player2 = Player("Player 2")
 
         self.place_ships(player1)
-        self.clear_screen()
+        # self.clear_screen()
         self.place_ships(player2)
-        self.clear_screen()
+        # self.clear_screen()
         
         current_player = player1
         while True:
-            self.clear_screen()
+            # self.clear_screen()
             other_player = player2 if current_player == player1 else player1
             print(f"{current_player.name}'s turn.")
             hit = current_player.take_turn(other_player)
