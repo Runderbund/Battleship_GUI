@@ -21,9 +21,13 @@ class Battleship:
             other_player = player2 if current_player == player1 else player1
             print(f"{current_player.name}'s turn.")
             hit = current_player.take_turn(other_player)
-            if hit and other_player.ships_left() == 0:
-                print(f"{current_player.name} wins!")
-                break
+            if hit:
+                for ship in other_player.ships:
+                    if ship.is_sunk():
+                        print(f"{ship.name} has been sunk!")
+                if other_player.ships_left() == 0:
+                    print(f"{current_player.name} wins!")
+                    break
             current_player, other_player = other_player, current_player
 
     def place_ships(self, player):
